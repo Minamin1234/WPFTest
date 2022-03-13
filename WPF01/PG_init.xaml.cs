@@ -16,19 +16,18 @@ using System.Windows.Shapes;
 namespace WPF01
 {
     /// <summary>
-    /// MainWindow.xaml の相互作用ロジック
+    /// PG_init.xaml の相互作用ロジック
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PG_init : Page
     {
-        public MainWindow()
+        public PG_init()
         {
             InitializeComponent();
-            //同じウィンドウ内に複数のコンテンツを表示させたり、切り替えたりするには「ページ」を使う。
-            //わざわざ新規にウィンドウを作る必要がない
+        }
 
-            //初期ページを設定します。
-            Uri pg_main = new Uri(@"\PG_init.xaml", UriKind.Relative);
-            f_main.Source = pg_main;
+        private void B_Clicked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
